@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Atiku 2027 Campaign</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+   
+
+    body {
+      background-image: url('atiku.jpeg');
+      background-size: cover;
+      background-position: top center;
+      background-attachment: fixed;
+    }
+  </style>
+</head>
+<body class="text-white">
+<nav x-data="{ open: false }" class="fixed top-0 left-0 right-0 bg-black bg-opacity-70 backdrop-blur-md z-50">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+    <!-- Logo -->
+    <h1 class="text-xl font-bold">Atiku Abubakar For 2027</h1>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex space-x-6 text-sm md:text-base">
+      <li><a href="#" class="hover:text-blue-400">Home</a></li>
+      <li><a href="#about" class="hover:text-blue-400">About</a></li>
+      <li><a href="#agenda" class="hover:text-blue-400">Agenda</a></li>
+      <li><a href="#donate" class="hover:text-blue-400">Donate</a></li>
+      <li><a href="#colunteer" class="hover:text-blue-400">Volunteer</a></li>
+      <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+    </ul>
+
+    <!-- Mobile Toggle Button -->
+    <button @click="open = !open" class="md:hidden text-white focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path x-show="!open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div x-show="open" @click.away="open = false" class="md:hidden px-4 pb-4">
+    <ul class="space-y-2 text-white text-sm">
+      <li><a href="#" class="block py-2 hover:text-blue-400">Home</a></li>
+      <li><a href="#about" class="block py-2 hover:text-blue-400">About</a></li>
+      <li><a href="#agenda" class="block py-2 hover:text-blue-400">Agenda</a></li>
+      <li><a href="#donate" class="block py-2 hover:text-blue-400">Donate</a></li>
+      <li><a href="#volunteer" class="hover:text-blue-400">Volunteer</a></li>
+      <li><a href="#contact" class="block py-2 hover:text-blue-400">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex items-center justify-center text-center px-4">
+    <div class="bg-black bg-opacity-60 p-8 rounded-lg max-w-2xl">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">A New Vision for Nigeria 🇳🇬</h2>
+      <p class="text-lg md:text-xl mb-6">Join the movement for progress, unity, and prosperity.</p>
+      <a href="#donate" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full">Donate Now</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 px-4 bg-black bg-opacity-70">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Meet Atiku Abubakar</h2>
+      <p class="text-lg">A visionary leader with decades of experience in governance, committed to building a united and prosperous Nigeria.</p>
+    </div>
+  </section>
+
+  <!-- Agenda Section -->
+  <section id="agenda" class="py-20 px-4 bg-black bg-opacity-70">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Our Agenda</h2>
+      <ul class="space-y-4 text-left text-lg">
+        <li>✅ Economic revitalization and job creation</li>
+        <li>✅ Education reform and youth empowerment</li>
+        <li>✅ National unity and security</li>
+        <li>✅ Healthcare access for all</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Donate Section -->
+  <section id="donate" class="py-20 px-4 bg-blue-700 bg-opacity-80 text-center">
+    <h2 class="text-3xl font-bold mb-4">Support the Campaign</h2>
+    <p class="mb-6 text-lg">Your contribution helps us reach more Nigerians and build a better future.</p>
+    <a href="#" class="bg-white text-blue-700 font-semibold py-2 px-6 rounded-full">Donate Now</a>
+  </section>
+
+
+  <section class="py-20 px-4 bg-black bg-opacity-70 text-white">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12">Meet the Team</h2>
+
+    <!-- Rukayya Usman Bako - Sponsor -->
+    <div class="flex flex-col md:flex-row items-center bg-blue-900 bg-opacity-80 p-6 rounded-lg mb-10">
+      <img src="rukayya.jpg" alt="Rukayya Usman Bako" class="w-64 h-64 object-cover rounded-lg shadow-lg mb-4 md:mb-0 md:mr-6  transform transition duration-300 hover:scale-105 hover:bg-gray-700 shadow-lg">
+      <div>
+        <h3 class="text-2xl font-bold">Rukayya Usman Bako</h3>
+        <p class="text-lg">📍 Kaduna South, Kaduna State</p>
+        <p class="text-lg">📞 08039118062</p>
+        <p class="mt-4 text-yellow-300 font-semibold">🌟 Sponsor & Youth Mobilizer – Empowering the future of Nigeria</p>
+      </div>
+    </div>
+
+    <!-- Other Members -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Almustapha Umar -->
+      <div class="bg-gray-800 p-4 rounded-lg text-center  transform transition duration-300 hover:scale-105 hover:bg-gray-700 shadow-lg">
+        <img src="musty.jpg" alt="Almustapha Umar" class="w-40 h-40 object-cover rounded-full mx-auto mb-4">
+        <h3 class="text-xl font-bold">Almustapha Umar</h3>
+        <p>Sokoto South, Sokoto State</p>
+        <p>📞 08169410856</p>
+        <p class="mt-2 text-blue-400">Developer & Youth Organizer</p>
+      </div>
+
+      <!-- Najaatu Musa -->
+      <div class="bg-gray-800 p-4 rounded-lg text-center  transform transition duration-300 hover:scale-105 hover:bg-gray-700 shadow-lg">
+        <img src="najaatu.jpg" alt="Najaatu Musa" class="w-40 h-40 object-cover rounded-full mx-auto mb-4">
+        <h3 class="text-xl font-bold">Najaatu Musa</h3>
+        <p>Kaduna South, Kaduna State</p>
+        <p>📞 08085913569</p>
+      </div>
+
+      <!-- Muazu Muhammad Auta -->
+      <div class="bg-gray-800 p-4 rounded-lg text-center  transform transition duration-300 hover:scale-105 hover:bg-gray-700 shadow-lg">
+        <img src="muazu.jpg" alt="Muazu Muhammad Auta" class="w-40 h-40 object-cover rounded-full mx-auto mb-4">
+        <h3 class="text-xl font-bold">Muazu Muhammad Auta</h3>
+        <p>Gashuwa LG, Yobe State</p>
+      </div>
+
+      <!-- Bashar Haruna -->
+     
+<div x-data="{ show: false }" class="bg-gray-800 p-4 rounded-lg text-center transform transition duration-300 hover:scale-105 hover:bg-gray-700 shadow-lg cursor-pointer">
+  <img src="bashar.jpg" alt="Bashar Haruna" class="w-40 h-40 object-cover rounded-full mx-auto mb-4">
+  <h3 class="text-xl font-bold">Bashar Haruna</h3>
+        <p>Gummi LG, Zamfara State</p>
+        <p>📞 08060210055</p>
+        <p class="mt-2 text-green-400">National Secretary</p>
+  <button @click="show = !show" class="mt-3 text-sm text-blue-400 hover:underline">View Bio</button>
+
+  <div x-show="show" x-transition class="mt-4 text-sm text-gray-300">
+    <p>Awafif is a dedicated youth mobilizer working to empower communities in Borno State. His leadership and outreach have helped connect hundreds of young people to opportunities and civic engagement.</p>
+  </div>
+</div>
+
+
+
+
+      <!-- Askira Uba Contact -->
+      
+<div x-data="{ show: false }" class="bg-gray-800 p-4 rounded-lg text-center transform transition duration-300 hover:scale-105 hover:bg-gray-700 shadow-lg cursor-pointer">
+  <img src="awafif.jpg" alt="Awafif Muhammed Hamza" class="w-40 h-40 object-cover rounded-full mx-auto mb-4">
+  <h3 class="text-xl font-bold">Awafif Muhammed Hamza</h3>
+  <p>Uba LG, Borno State</p>
+  <p>📞 08091150293</p>
+  <button @click="show = !show" class="mt-3 text-sm text-blue-400 hover:underline">View Bio</button>
+
+  <div x-show="show" x-transition class="mt-4 text-sm text-gray-300">
+    <p>Awafif is a dedicated youth mobilizer working to empower communities in Borno State. His leadership and outreach have helped connect hundreds of young people to opportunities and civic engagement.</p>
+  </div>
+</div>
+
+
+
+
+<div x-data="{ show: false }" class="bg-gray-800 p-4 rounded-lg text-center transform transition duration-300 hover:scale-105 hover:bg-gray-700 shadow-lg cursor-pointer">
+  <img src="adanladi.jpg" alt="Awafif Muhammed Hamza" class="w-40 h-40 object-cover rounded-full mx-auto mb-4">
+  <h3 class="text-xl font-bold">Auwalu Danladi</h3>
+  <p>Shira, Bauchi State</p>
+  <p>📞 07067855640</p>
+  <button @click="show = !show" class="mt-3 text-sm text-blue-400 hover:underline">View Bio</button>
+
+  <div x-show="show" x-transition class="mt-4 text-sm text-gray-300">
+    <p>Awafif is a dedicated youth mobilizer working to empower communities in Borno State. His leadership and outreach have helped connect hundreds of young people to opportunities and civic engagement.</p>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div x-data="{ show: false }" class="bg-gray-800 p-4 rounded-lg text-center transform transition duration-300 hover:scale-105 hover:bg-gray-700 shadow-lg cursor-pointer">
+  <img src="tasiusd.jpg" alt="Awafif Muhammed Hamza" class="w-40 h-40 object-cover rounded-full mx-auto mb-4">
+  <h3 class="text-xl font-bold">TASIU SD MAZARI</h3>
+  <p>KUMBOTSO LG, KANO State</p>
+  <p>📞 07066333127</p>
+  <button @click="show = !show" class="mt-3 text-sm text-blue-400 hover:underline">View Bio</button>
+
+  <div x-show="show" x-transition class="mt-4 text-sm text-gray-300">
+    <p>Awafif is a dedicated youth mobilizer working to empower communities in Borno State. His leadership and outreach have helped connect hundreds of young people to opportunities and civic engagement.</p>
+  </div>
+</div>
+
+
+
+
+
+<div x-data="{ show: false }" class="bg-gray-800 p-4 rounded-lg text-center transform transition duration-300 hover:scale-105 hover:bg-gray-700 shadow-lg cursor-pointer">
+  <img src="salahaz.jpg" alt="Awafif Muhammed Hamza" class="w-40 h-40 object-cover rounded-full mx-auto mb-4">
+  <h3 class="text-xl font-bold">Salaha zakari</h3>
+  <p>Wamba LG, Nasarawa State</p>
+  <p>📞 08105952093</p>
+  <button @click="show = !show" class="mt-3 text-sm text-blue-400 hover:underline">View Bio</button>
+
+  <div x-show="show" x-transition class="mt-4 text-sm text-gray-300">
+    <p>Awafif is a dedicated youth mobilizer working to empower communities in Borno State. His leadership and outreach have helped connect hundreds of young people to opportunities and civic engagement.</p>
+  </div>
+</div>
+
+
+
+
+
+<div x-data="{ show: false }" class="bg-gray-800 p-4 rounded-lg text-center transform transition duration-300 hover:scale-105 hover:bg-gray-700 shadow-lg cursor-pointer">
+  <img src="abdulrashid.jpg" alt="Awafif Muhammed Hamza" class="w-40 h-40 object-cover rounded-full mx-auto mb-4">
+  <h3 class="text-xl font-bold">Abdulrasheed Mustapha</h3>
+  <p>Futua LG, Katsina State</p>
+  <p>📞 08144444454</p>
+  <button @click="show = !show" class="mt-3 text-sm text-blue-400 hover:underline">View Bio</button>
+
+  <div x-show="show" x-transition class="mt-4 text-sm text-gray-300">
+    <p>Awafif is a dedicated youth mobilizer working to empower communities in Borno State. His leadership and outreach have helped connect hundreds of young people to opportunities and civic engagement.</p>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div x-data="{ show: false }" class="bg-gray-800 p-4 rounded-lg text-center transform transition duration-300 hover:scale-105 hover:bg-gray-700 shadow-lg cursor-pointer">
+  <img src="rukyzry.jpg" alt="Awafif Muhammed Hamza" class="w-40 h-40 object-cover rounded-full mx-auto mb-4">
+  <h3 class="text-xl font-bold">Rukayya Muhammad</h3>
+  <p>Zariya LG, Kaduna State</p>
+  <p>📞 07025227780</p>
+  <button @click="show = !show" class="mt-3 text-sm text-blue-400 hover:underline">View Bio</button>
+
+  <div x-show="show" x-transition class="mt-4 text-sm text-gray-300">
+    <p>Awafif is a dedicated youth mobilizer working to empower communities in Borno State. His leadership and outreach have helped connect hundreds of young people to opportunities and civic engagement.</p>
+  </div>
+</div>
+
+
+
+
+
+
+<div x-data="{ show: false }" class="bg-gray-800 p-4 rounded-lg text-center transform transition duration-300 hover:scale-105 hover:bg-gray-700 shadow-lg cursor-pointer">
+  <img src="kadijanija.jpg" alt="Awafif Muhammed Hamza" class="w-40 h-40 object-cover rounded-full mx-auto mb-4">
+  <h3 class="text-xl font-bold">khadijah Ahmad</h3>
+  <p>Agaje LG, Niger State</p>
+  <p>📞 07039739545</p>
+  <button @click="show = !show" class="mt-3 text-sm text-blue-400 hover:underline">View Bio</button>
+
+  <div x-show="show" x-transition class="mt-4 text-sm text-gray-300">
+    <p>Awafif is a dedicated youth mobilizer working to empower communities in Borno State. His leadership and outreach have helped connect hundreds of young people to opportunities and civic engagement.</p>
+  </div>
+</div>
+
+
+
+
+<div x-data="{ show: false }" class="bg-gray-800 p-4 rounded-lg text-center transform transition duration-300 hover:scale-105 hover:bg-gray-700 shadow-lg cursor-pointer">
+  <img src="basiruzmfr.jpg" alt="Awafif Muhammed Hamza" class="w-40 h-40 object-cover rounded-full mx-auto mb-4">
+  <h3 class="text-xl font-bold">BASIRU AHMED</h3>
+  <p>Zurmi LG, Zamfara State</p>
+  <p>📞 08160011630</p>
+  <button @click="show = !show" class="mt-3 text-sm text-blue-400 hover:underline">View Bio</button>
+
+  <div x-show="show" x-transition class="mt-4 text-sm text-gray-300">
+    <p>Awafif is a dedicated youth mobilizer working to empower communities in Borno State. His leadership and outreach have helped connect hundreds of young people to opportunities and civic engagement.</p>
+  </div>
+</div>
+
+
+
+
+
+
+<div x-data="{ show: false }" class="bg-gray-800 p-4 rounded-lg text-center transform transition duration-300 hover:scale-105 hover:bg-gray-700 shadow-lg cursor-pointer">
+  <img src="anastrb.jpg" alt="Awafif Muhammed Hamza" class="w-40 h-40 object-cover rounded-full mx-auto mb-4">
+  <h3 class="text-xl font-bold">Anas Shuaibu</h3>
+  <p>Jalingo LG, Taraba State</p>
+  <p>📞 07069697863</p>
+  <button @click="show = !show" class="mt-3 text-sm text-blue-400 hover:underline">View Bio</button>
+
+  <div x-show="show" x-transition class="mt-4 text-sm text-gray-300">
+    <p>Awafif is a dedicated youth mobilizer working to empower communities in Borno State. His leadership and outreach have helped connect hundreds of young people to opportunities and civic engagement.</p>
+  </div>
+</div>
+
+
+
+
+
+<div x-data="{ show: false }" class="bg-gray-800 p-4 rounded-lg text-center transform transition duration-300 hover:scale-105 hover:bg-gray-700 shadow-lg cursor-pointer">
+  <img src="anasabdul.jpg" alt="Awafif Muhammed Hamza" class="w-40 h-40 object-cover rounded-full mx-auto mb-4">
+  <h3 class="text-xl font-bold">Adamu Abdullahi</h3>
+  <p>Gwambe State</p>
+  <p>📞 08130336825</p>
+  <button @click="show = !show" class="mt-3 text-sm text-blue-400 hover:underline">View Bio</button>
+
+  <div x-show="show" x-transition class="mt-4 text-sm text-gray-300">
+    <p>Awafif is a dedicated youth mobilizer working to empower communities in Borno State. His leadership and outreach have helped connect hundreds of young people to opportunities and civic engagement.</p>
+  </div>
+</div>
+
+
+
+<div x-data="{ show: false }" class="bg-gray-800 p-4 rounded-lg text-center transform transition duration-300 hover:scale-105 hover:bg-gray-700 shadow-lg cursor-pointer">
+  <img src="maaraza.jpg" alt="Awafif Muhammed Hamza" class="w-40 h-40 object-cover rounded-full mx-auto mb-4">
+  <h3 class="text-xl font-bold">Maaraza Gambo Ali</h3>
+  <p>Kanam LG, Plateu State</p>
+  <p>📞 08168511742 or 08056481218</p>
+  <button @click="show = !show" class="mt-3 text-sm text-blue-400 hover:underline">View Bio</button>
+
+  <div x-show="show" x-transition class="mt-4 text-sm text-gray-300">
+    <p>Awafif is a dedicated youth mobilizer working to empower communities in Borno State. His leadership and outreach have helped connect hundreds of young people to opportunities and civic engagement.</p>
+  </div>
+</div>
+
+
+
+<div x-data="{ show: false }" class="bg-gray-800 p-4 rounded-lg text-center transform transition duration-300 hover:scale-105 hover:bg-gray-700 shadow-lg cursor-pointer">
+  <img src="ambumar.jpg" alt="Awafif Muhammed Hamza" class="w-40 h-40 object-cover rounded-full mx-auto mb-4">
+  <h3 class="text-xl font-bold">AMB umar Salisu rimaye</h3>
+  <p>Kankia LG, Katsina State</p>
+  <p>📞 07041617018</p>
+  <button @click="show = !show" class="mt-3 text-sm text-blue-400 hover:underline">View Bio</button>
+
+  <div x-show="show" x-transition class="mt-4 text-sm text-gray-300">
+    <p>Awafif is a dedicated youth mobilizer working to empower communities in Borno State. His leadership and outreach have helped connect hundreds of young people to opportunities and civic engagement.</p>
+  </div>
+</div>
+
+
+
+
+
+<div x-data="{ show: false }" class="bg-gray-800 p-4 rounded-lg text-center transform transition duration-300 hover:scale-105 hover:bg-gray-700 shadow-lg cursor-pointer">
+  <img src="shafiu.jpg" alt="Awafif Muhammed Hamza" class="w-40 h-40 object-cover rounded-full mx-auto mb-4">
+  <h3 class="text-xl font-bold">SHAFIU ALHAJI YA'U</h3>
+  <p>MASHEHU LG, Niger State</p>
+  <p>📞 08089585883</p>
+  <button @click="show = !show" class="mt-3 text-sm text-blue-400 hover:underline">View Bio</button>
+
+  <div x-show="show" x-transition class="mt-4 text-sm text-gray-300">
+    <p>Awafif is a dedicated youth mobilizer working to empower communities in Borno State. His leadership and outreach have helped connect hundreds of young people to opportunities and civic engagement.</p>
+  </div>
+</div>
+
+
+
+
+<div x-data="{ show: false }" class="bg-gray-800 p-4 rounded-lg text-center transform transition duration-300 hover:scale-105 hover:bg-gray-700 shadow-lg cursor-pointer">
+  <img src="nuraibrahim.jpg" alt="Awafif Muhammed Hamza" class="w-40 h-40 object-cover rounded-full mx-auto mb-4">
+  <h3 class="text-xl font-bold">NURA IBRAHIM</h3>
+  <p>Giade LG, Bauchi State</p>
+  <p>📞 07039024273</p>
+  <button @click="show = !show" class="mt-3 text-sm text-blue-400 hover:underline">View Bio</button>
+
+  <div x-show="show" x-transition class="mt-4 text-sm text-gray-300">
+    <p>Awafif is a dedicated youth mobilizer working to empower communities in Borno State. His leadership and outreach have helped connect hundreds of young people to opportunities and civic engagement.</p>
+  </div>
+</div>
+
+
+
+
+
+<div x-data="{ show: false }" class="bg-gray-800 p-4 rounded-lg text-center transform transition duration-300 hover:scale-105 hover:bg-gray-700 shadow-lg cursor-pointer">
+  <img src="yusufmuhammad.jpg" alt="Awafif Muhammed Hamza" class="w-40 h-40 object-cover rounded-full mx-auto mb-4">
+  <h3 class="text-xl font-bold">Yusuf Muhammad Yusuf</h3>
+  <p>Garun Malam LG, Kano State</p>
+  <p>📞 09060331567 / 09078314335</p>
+  <button @click="show = !show" class="mt-3 text-sm text-blue-400 hover:underline">View Bio</button>
+
+  <div x-show="show" x-transition class="mt-4 text-sm text-gray-300">
+    <p>Awafif is a dedicated youth mobilizer working to empower communities in Borno State. His leadership and outreach have helped connect hundreds of young people to opportunities and civic engagement.</p>
+  </div>
+</div>
+
+
+
+
+
+
+<div x-data="{ show: false }" class="bg-gray-800 p-4 rounded-lg text-center transform transition duration-300 hover:scale-105 hover:bg-gray-700 shadow-lg cursor-pointer">
+  <img src="salome.jpg" alt="Awafif Muhammed Hamza" class="w-40 h-40 object-cover rounded-full mx-auto mb-4">
+  <h3 class="text-xl font-bold">Salome Ihuigwe</h3>
+  <p>Obi/Akpor LG, Rivers State</p>
+  <p>📞 07066059264</p>
+  <button @click="show = !show" class="mt-3 text-sm text-blue-400 hover:underline">View Bio</button>
+
+  <div x-show="show" x-transition class="mt-4 text-sm text-gray-300">
+    <p>Awafif is a dedicated youth mobilizer working to empower communities in Borno State. His leadership and outreach have helped connect hundreds of young people to opportunities and civic engagement.</p>
+  </div>
+</div>
+
+
+
+      </div>
+
+      
+
+
+      
+
+    </div>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 px-4 bg-black bg-opacity-70 text-center">
+    <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
+    <p class="text-lg">Reach out to volunteer, ask questions, or share your support.</p>
+    <p class="mt-4">📧 campaign@atiku2027.ng</p>
+    <p>📞 +234 8161741439</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black bg-opacity-80 py-6 text-center text-sm">
+    <p>&copy; 2025 Atiku Campaign. All rights reserved.</p>
+    <div class="mt-2">
+      <a href="#" class="mx-2 hover:underline">Facebook</a>
+      <a href="#" class="mx-2 hover:underline">Twitter</a>
+      <a href="#" class="mx-2 hover:underline">Instagram</a>
+    </div>
+  </footer>
+
+</body>
+</html>
